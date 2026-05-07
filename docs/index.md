@@ -1,6 +1,8 @@
 # InSAR Teaching Hub
 
-I'm [Dani Lindsay](https://www.gns.cri.nz/about-us/staff-search/danielle-lindsay/) — an InSAR scientist at [ESNZ](https://www.gns.cri.nz/) in Wellington, working on landslides, faults, and volcanic systems across New Zealand. I built this hub for masters students who are starting to work with InSAR data: you probably know what an interferogram looks like from a paper, but you haven't yet made one yourself. This is not a course. The goal is to point you to the best resources that already exist, give you a path through them, and share the practical things I wish someone had told me earlier. → [More about me and my research](about.md)
+I'm [Dani Lindsay](https://www.gns.cri.nz/about-us/staff-search/danielle-lindsay/) — an InSAR scientist at [ESNZ](https://www.gns.cri.nz/) in Wellington, working on landslides, faults, and volcanic systems across New Zealand. I built this hub for masters students who are starting to work with InSAR data: you probably know what an interferogram looks like from a paper, but you haven't yet made one yourself. This is not a course. The goal is to point you to the best resources that already exist and give you a path through them. → [More about me and my research](about.md)
+
+NISAR launched in July 2025 and I'm actively working out what the best NZ processing workflows look like — watch this space as that develops.
 
 This hub was assembled with the help of Claude (Anthropic), drawing on my thesis work, research notes, and guidance. Pages carry a review banner until I've checked them — treat flagged content as a useful starting point but verify anything before you cite or act on it.
 
@@ -17,7 +19,7 @@ This hub was assembled with the help of Claude (Anthropic), drawing on my thesis
 </div>
 
 !!! tip "Best place to start"
-    Go straight to the **[Resources](resources.md)** page — the ASF storyboards there are the best freely available introduction to InSAR and should be your first stop.
+    Go straight to **[First Look](resources.md)** — the ASF storyboards there are the best freely available introduction to InSAR and should be your first stop.
 
 ---
 

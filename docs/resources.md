@@ -1,7 +1,13 @@
-# Resources
+# InSAR Resources
 
 !!! warning "Under review"
     This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+**Interferometric Synthetic Aperture Radar (InSAR)** is a satellite-based technique for measuring ground surface deformation at centimetre to millimetre scales — without fieldwork, without clear skies, and regardless of whether the deforming area is accessible. A satellite passes over the same area at different times; by comparing the phase of the radar signal between passes, motion of the ground surface in the satellite line-of-sight direction can be mapped across an entire landscape.
+
+Currently operating satellites use wavelengths of around 3 cm (X-band), 6 cm (C-band, e.g. Sentinel-1), and 23 cm (L-band, e.g. ALOS-2, NISAR). Longer wavelengths maintain coherence better over vegetated terrain — important in New Zealand.
 
 ---
 
@@ -48,7 +54,7 @@ If you want to run MintPy without setting up a local environment, [OpenSARLab](h
 
 ## Useful GitHub repositories
 
-Most InSAR software exists primarily on GitHub. Key repositories:
+Most InSAR software lives primarily on GitHub. Key repositories:
 
 | Repository | What it is |
 |------------|-----------|
@@ -63,4 +69,4 @@ Most InSAR software exists primarily on GitHub. Key repositories:
 
 ---
 
-For academic references and key papers, see the [Literature](literature/keystone-papers.md) section. For short courses and scholarships, see [Scholarships & Community](community.md).
+For academic references and key papers, see the [Literature](literature/keystone-papers.md) section. For short courses and scholarships, see [Conferences and Scholarships](community.md).

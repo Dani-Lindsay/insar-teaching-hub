@@ -48,10 +48,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
   - Resources:
     - resources.md
-    - Scholarships & Community: community.md
+    - Conferences and Scholarships: community.md
   - Workflows:
     - workflows/index.md
     - Environment Setup: workflows/environment-setup.md

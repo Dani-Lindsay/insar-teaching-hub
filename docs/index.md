@@ -19,17 +19,16 @@ This hub was assembled with the help of Claude (Anthropic), drawing on my thesis
 </div>
 
 !!! tip "Best place to start"
-    Go straight to **[First Look](resources.md)** — the ASF storyboards there are the best freely available introduction to InSAR and should be your first stop.
+    Go straight to **[InSAR Resources](resources.md)** — the ASF storyboards there are the best freely available introduction to InSAR and should be your first stop.
 
 ---
 
 ## A suggested pathway
 
-1. **[Resources](resources.md)** — start with the ASF storyboards, then the background reading
-2. **[Getting Started](getting-started.md)** — what InSAR measures, how it works, and what to watch out for when interpreting data
-3. **[Key Papers](literature/keystone-papers.md)** — the papers and algorithm developments that shaped the field
-4. **[Single Interferogram](workflows/single-interferogram.md)** — order and explore your first interferogram using ASF OnDemand
-5. **[Time Series](workflows/hyp3-mintpy.md)** — build a displacement time series with HyP3 products and MintPy
+1. **[InSAR Resources](resources.md)** — start with the ASF storyboards, then the background reading
+2. **[Key Papers](literature/keystone-papers.md)** — the papers and algorithm developments that shaped the field
+3. **[Single Interferogram](workflows/single-interferogram.md)** — order and explore your first interferogram using ASF OnDemand
+4. **[Time Series](workflows/hyp3-mintpy.md)** — build a displacement time series with HyP3 products and MintPy
 
 ---
 

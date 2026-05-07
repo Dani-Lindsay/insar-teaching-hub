@@ -195,6 +195,8 @@ Govorcin et al. (2025) used the full California ARIA archive — 61,451 GUNW pro
 
 ## Acknowledgements
 
-This workflow makes use of MintPy (Yunjun et al., 2019), available at [github.com/insarlab/MintPy](https://github.com/insarlab/MintPy).
+This workflow makes use of MintPy (Yunjun et al., 2019), available at [github.com/insarlab/MintPy](https://github.com/insarlab/MintPy). ARIA-S1-GUNW products were obtained from the NASA Alaska Satellite Facility DAAC (Bekaert et al., 2023).
 
 > Yunjun, Z., Fattahi, H., & Amelung, F. (2019). Small baseline InSAR time series analysis: Unwrapping error correction and noise reduction. *Computers & Geosciences*, 133, 104331. [https://doi.org/10.1016/j.cageo.2019.104331](https://doi.org/10.1016/j.cageo.2019.104331)
+
+> Bekaert, D. P. S., et al. (2023). *ARIA Sentinel-1 Geocoded Unwrapped Interferograms (GUNW)*. NASA Alaska Satellite Facility DAAC. [https://doi.org/10.5067/1VIKGRF0ARUF](https://doi.org/10.5067/1VIKGRF0ARUF)

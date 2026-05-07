@@ -45,6 +45,11 @@ Ionospheric signals in interferograms typically appear as:
 - Asymmetries between ascending and descending tracks (because ascending passes occur in the afternoon when the ionosphere is more active)
 - At L-band: signals that can reach tens of centimetres to metres of apparent displacement across a wide-swath scene
 
+<p align="center">
+  <img src="../../assets/ionosphere_examples_alos2.jpg" width="700"><br>
+  <em>Examples of ionospheric signals in ALOS-2 ScanSAR interferograms over Northern California (Lindsay, PhD thesis, UC Berkeley 2025). The long-wavelength streaks running roughly parallel to the range direction are characteristic of ionospheric noise at L-band. These signals are not ground deformation.</em>
+</p>
+
 ---
 
 ## New Zealand context

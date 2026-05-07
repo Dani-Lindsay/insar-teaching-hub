@@ -61,10 +61,4 @@ Before interpreting any pattern, consider each of the following.
 
 ---
 
-## Key references
-
-- **Bürgmann, R., Rosen, P. A., & Fielding, E. J.** (2000). Synthetic aperture radar interferometry to measure Earth's surface topography and its deformation. *Annual Review of Earth and Planetary Sciences*, 28, 169–209.
-- **Massonnet, D. et al.** (1993). The displacement field of the Landers earthquake mapped by radar interferometry. *Nature*, 364, 138–142.
-- **Wright, T. J., Parsons, B. E., & Lu, Z.** (2004). Toward mapping surface deformation in three dimensions using InSAR. *Geophysical Research Letters*, 31.
-- **Zebker, H. A. et al.** (1997). Atmospheric effects in interferometric synthetic aperture radar surface deformation and topographic maps. *Journal of Geophysical Research*, 102, 7547–7563.
-- **Simons, M. & Rosen, P.A.** (2015). Interferometric Synthetic Aperture Radar Geodesy. In: *Treatise on Geophysics*, 2nd ed., Vol. 3. Elsevier.
+Key papers for these concepts are listed in the [Keystone Papers](literature/keystone-papers.md) table.

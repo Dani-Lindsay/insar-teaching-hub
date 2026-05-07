@@ -9,7 +9,7 @@
 
 ## Hi, I'm Dani
 
-I'm an InSAR Scientist at GNS Science (Earth Sciences New Zealand, ESNZ), based in Wellington. My background is in geology and geophysics — I studied at Victoria University of Wellington before completing a PhD at UC Berkeley, and I've spent most of my career trying to make satellites tell us something useful about how the ground moves.
+I'm an InSAR Scientist at [ESNZ](https://www.gns.cri.nz/) (Earth Sciences New Zealand), based in Wellington. My background is in geology and geophysics — I studied at Victoria University of Wellington before completing a PhD at UC Berkeley, and I've spent most of my career trying to make satellites tell us something useful about how the ground moves.
 
 I'm curious about the places where slow, steady processes tip into something more dramatic — creeping faults that lock up, landslides that accelerate, volcanic systems that quietly inflate for years before anything happens. InSAR is well-suited to this kind of problem because it's dense, repeatable, and indifferent to whether the deformation is happening somewhere accessible or not.
 

@@ -1,6 +1,8 @@
 # InSAR Teaching Hub
 
-I'm Dani Lindsay — an InSAR scientist at GNS Science in Wellington, working on landslides, faults, and volcanic systems across New Zealand. I built this hub for masters students who are starting to work with InSAR data: you probably know what an interferogram looks like from a paper, but you haven't yet made one yourself. This is not a course. The goal is to point you to the best resources that already exist, give you a path through them, and share the practical things I wish someone had told me earlier. → [More about me and my research](about.md)
+I'm [Dani Lindsay](https://www.gns.cri.nz/about-us/staff-search/danielle-lindsay/) — an InSAR scientist at [ESNZ](https://www.gns.cri.nz/) in Wellington, working on landslides, faults, and volcanic systems across New Zealand. I built this hub for masters students who are starting to work with InSAR data: you probably know what an interferogram looks like from a paper, but you haven't yet made one yourself. This is not a course. The goal is to point you to the best resources that already exist, give you a path through them, and share the practical things I wish someone had told me earlier. → [More about me and my research](about.md)
+
+This hub was assembled with the help of Claude (Anthropic), drawing on my thesis work, research notes, and guidance. Pages carry a review banner until I've checked them — treat flagged content as a useful starting point but verify anything before you cite or act on it.
 
 <div class="photo-grid">
   <img src="assets/photos/GPS_helicopter.JPG" alt="GPS fieldwork in the Southern Alps">

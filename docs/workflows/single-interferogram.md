@@ -132,15 +132,6 @@ For inspiration, here is Figure 1 from Pritchard & Simons (2002) — one of the 
 
 ---
 
-## Next steps
-
-If you want to go beyond a single interferogram and build a displacement time series, see:
-
-- **[HyP3 + MintPy time series](hyp3-mintpy.md)** — uses the same HyP3 products you have just downloaded
-- **[LiCSAR + LiCSBAS](licsar-licsbas.md)** — pre-processed Sentinel-1 stacks from COMET, good for tectonic and volcanic regions worldwide
-
----
-
 ## Acknowledgement
 
 When using HyP3 products in reports, presentations, or publications:

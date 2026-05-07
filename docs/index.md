@@ -1,8 +1,18 @@
 # InSAR Teaching Hub
 
-A curated collection of useful things to get you going with **Interferometric Synthetic Aperture Radar (InSAR)**.
+I'm Dani Lindsay — an InSAR scientist at GNS Science in Wellington, working on landslides, faults, and volcanic systems across New Zealand. I built this hub for masters students who are starting to work with InSAR data: you probably know what an interferogram looks like from a paper, but you haven't yet made one yourself. This is not a course. The goal is to point you to the best resources that already exist, give you a path through them, and share the practical things I wish someone had told me earlier. → [More about me and my research](about.md)
 
-This hub is not a complete learning environment — excellent teaching materials already exist, and this is not trying to replicate them. The goal is to curate the things I've found most helpful, point you to the best resources, and give you a structured pathway into the field. Aimed at masters-level students with a geology or earth science background who have likely encountered InSAR in the literature but have not yet processed or interpreted data themselves.
+<div class="photo-grid">
+  <img src="assets/photos/GPS_helicopter.JPG" alt="GPS fieldwork in the Southern Alps">
+  <img src="assets/photos/vibe_truck.jpeg" alt="Driving a vibroseis truck on the West Coast">
+  <img src="assets/photos/IMG_0970.JPG" alt="Field class at Kaikōura landslide scarp">
+  <img src="assets/photos/IMG_1049.JPG" alt="Fieldwork at Kaikōura beach fault scarp">
+  <img src="assets/photos/geophones.jpeg" alt="Packing geophones for fieldwork">
+  <img src="assets/photos/poster_w_jackson.jpeg" alt="AGU poster presentation">
+  <img src="assets/photos/IMG_5255.jpeg" alt="Teaching EPS at UC Berkeley">
+  <img src="assets/photos/IMG_1070.JPG" alt="Field class at Kaikōura road damage">
+  <img src="assets/photos/yosemite_w_jackson.jpeg" alt="Yosemite with Jackson">
+</div>
 
 !!! tip "Best place to start"
     Go straight to the **[Resources](resources.md)** page — the ASF storyboards there are the best freely available introduction to InSAR and should be your first stop.

@@ -31,6 +31,7 @@ The full Sentinel-1 archive for all of New Zealand has been processed into ARIA 
 - Fixed spatial resolution and filtering — you cannot change multi-looking or filter parameters
 - Pairs are pre-defined SBAS-style short temporal baselines; you cannot generate bespoke long-baseline pairs
 - Landslides are a tricky target — 90 m pixel spacing sets the minimum resolvable feature size, which rules out smaller slides but is adequate for large, slow-moving ones
+- **Data gaps in the NZ archive**: some tracks have a gap in acquisitions (typically in the 2021–2022 period for some NZ frames) that breaks network connectivity. Where this occurs you cannot invert a single connected time series spanning the full archive — you will need to treat the pre- and post-gap periods as two separate time series. Check the coherence history plots in `ariaTSsetup.py` output before assuming continuous coverage
 
 **Sign convention — read this:** ARIA unwrapped interferograms have the **opposite sign** from HyP3/GAMMA products. In ARIA products the more recent acquisition is the reference (not the secondary), so positive values indicate motion **toward** the sensor and negative values indicate motion **away from** the sensor. This is the reverse of what you are used to from HyP3. MintPy handles this correctly internally, but it will trip you up if you compare velocity maps from the two workflows directly without checking.
 
@@ -48,7 +49,7 @@ If you see a pattern where urban pixels are consistently offset from rural pixel
 
 ## Example: 2023 Kawerau seismic swarm
 
-These data were used to detect and measure coseismic displacement from the March 2023 Kawerau earthquake swarm (3 moderate earthquakes, cumulative moment equivalent to ~M5.5). Both ascending and descending tracks show a clear step at 2023-03-18, with maximum LOS displacement of ~9 cm in both geometries.
+These data were used to detect and measure coseismic displacement from the March 2023 Kawerau earthquake swarm (3 moderate earthquakes, cumulative moment equivalent to ~M5.5). Both ascending and descending tracks show a clear step at 2023-03-18, with maximum LOS displacement of ~9 cm in both geometries. For full seismological and structural context see Marck et al. (*in prep*).
 
 <p align="center">
   <img src="../../assets/ARIA_Kawerau.png" width="750"><br>
@@ -172,7 +173,7 @@ asc_desc2horz_vert.py \
 Govorcin et al. (2025) used the full California ARIA archive — 61,451 GUNW products across nine tracks — to produce a state-wide vertical land motion (VLM) map at 90 m resolution and quantify its contribution to relative sea-level rise projections. The study shows that regional sea-level projections can underestimate local rise by more than a factor of two in areas with localised subsidence (e.g., San Francisco Bay, Los Angeles), and that temporally variable VLM driven by groundwater and hydrocarbon extraction can increase 2050 projection uncertainty by up to 0.4 m in some areas. It is a compelling demonstration of what you can do with the full ARIA archive at scale, and the methods are directly applicable to NZ coastal subsidence and uplift questions.
 
 <p align="center">
-  <img src="../../assets/Govorcin2025_Fig1.png" width="750"><br>
+  <img src="../../assets/ARIA_GovorcinFig1.png" width="750"><br>
   <em>Figure 1 from Govorcin et al. (2025): VLM (mm/year) for 2015–2023 estimated from Sentinel-1 ARIA products combined with GNSS, relative to ITRF2014. Negative values reflect subsidence; positive values reflect uplift. Published under CC BY 4.0.</em>
 </p>
 
@@ -182,8 +183,18 @@ Govorcin et al. (2025) used the full California ARIA archive — 61,451 GUNW pro
 
 ## Key references
 
-| Tool | Reference |
-|------|-----------|
+| Tool / Product | Reference |
+|----------------|-----------|
+| ARIA-S1-GUNW products | Bekaert, D. P. S., et al. (2023). *ARIA Sentinel-1 Geocoded Unwrapped Interferograms (GUNW)*. NASA Alaska Satellite Facility DAAC. [https://doi.org/10.5067/1VIKGRF0ARUF](https://doi.org/10.5067/1VIKGRF0ARUF) |
 | ARIA-tools | Buzzanga et al. (2020); [github.com/aria-tools/ARIA-tools](https://github.com/aria-tools/ARIA-tools) |
 | MintPy | Yunjun, Fattahi & Amelung (2019); [github.com/insarlab/MintPy](https://github.com/insarlab/MintPy) |
 | GNU Parallel (used in download) | Tange (2025). Zenodo. [https://doi.org/10.5281/zenodo.17692695](https://doi.org/10.5281/zenodo.17692695) |
+| Kawerau seismic swarm | Marck, A., Illsley-Kemp, F., Hreinsdóttir, S., Lindsay, D., Villamor, P., & Hart, R. (*in prep*). Swarm activity at the boundary between magmatic and tectonic rift segments: The March 2023 Kawerau seismic swarm (Ōkataina, North Island, New Zealand). |
+
+---
+
+## Acknowledgements
+
+This workflow makes use of MintPy (Yunjun et al., 2019), available at [github.com/insarlab/MintPy](https://github.com/insarlab/MintPy).
+
+> Yunjun, Z., Fattahi, H., & Amelung, F. (2019). Small baseline InSAR time series analysis: Unwrapping error correction and noise reduction. *Computers & Geosciences*, 133, 104331. [https://doi.org/10.1016/j.cageo.2019.104331](https://doi.org/10.1016/j.cageo.2019.104331)

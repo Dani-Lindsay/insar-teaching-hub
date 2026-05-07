@@ -1,14 +1,7 @@
 # Resources
 
-
 !!! warning "Under review"
     This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
-
----
-
-
-!!! note "What this hub is"
-    This is a curated collection of things I've found useful for getting started with InSAR — not a complete learning environment. The goal is to save you time finding good resources and to give you a structured path through them. The best learning materials already exist; I'm just pointing you to them.
 
 ---
 
@@ -28,7 +21,7 @@ The full ASF storyboard collection (SAR concepts, mission overviews, application
 
 ## Background reading
 
-These are short, accessible reads before you get into the processing.
+Short, accessible reads before you get into the processing.
 
 - **ASF Introduction to SAR** — what SAR is and how it works, no maths required  
   [https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/)
@@ -47,18 +40,4 @@ These are short, accessible reads before you get into the processing.
 
 ---
 
-## If you want to go deeper — reference text
-
-- **Simons, M. & Rosen, P.A.** (2015). Interferometric Synthetic Aperture Radar Geodesy. In: *Treatise on Geophysics*, 2nd ed., Vol. 3 (pp. 339–385). Elsevier.  
-  [PDF](https://simons.caltech.edu/publications/pdfs/Simons_etal_2015.pdf) — The standard reference chapter. Dense but comprehensive.
-
----
-
-## Short courses
-
-If you want structured instruction with hands-on processing:
-
-- **EarthScope InSAR short courses** — the best free InSAR training available. Offered remotely (~5 days). Applications open each year around May/June — see the [Community](community.md) page for details.  
-  [https://www.earthscope.org/education/skill-building-learning/courses/](https://www.earthscope.org/education/skill-building-learning/courses/)
-- 2025 course recordings: [YouTube playlist](https://www.youtube.com/playlist?list=PLGQwSTwiUcKyFTPhELEVOjqzq9rPUJM1f)
-- 2025 course notebooks: [GitHub](https://github.com/isceplus/2025-isceplus)
+For academic references and key papers, see the [Literature](literature/keystone-papers.md) section. For short courses and scholarships, see [Scholarships & Community](community.md).

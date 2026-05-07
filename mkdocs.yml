@@ -48,17 +48,17 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Resources: resources.md
   - Workflows:
     - Single Interferogram (ASF OnDemand): workflows/single-interferogram.md
     - Time Series (HyP3 + MintPy): workflows/hyp3-mintpy.md
     - Time Series (LiCSAR + LiCSBAS): workflows/licsar-licsbas.md
+    - PyGMT Maps: tools/pygmt-maps.md
+  - Resources:
+    - First Look: resources.md
+    - Scholarships & Community: community.md
   - Literature:
     - History of InSAR: literature/history.md
     - Keystone Papers: literature/keystone-papers.md
     - NZ InSAR Papers: literature/nz-papers.md
-  - Concepts:
     - Ionospheric Effects: concepts/ionosphere.md
-    - PyGMT Maps: tools/pygmt-maps.md
-  - Community: community.md
   - About: about.md

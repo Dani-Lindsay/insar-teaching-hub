@@ -25,6 +25,10 @@ A 5-day remote short course covering InSAR theory and processing methods from NA
 
 This course is highly recommended — it covers the theory and methods behind the software you will use throughout your research. Apply as early in your masters as possible.
 
+If you miss the application window, past year materials are publicly available:
+- 2025 recordings: [YouTube playlist](https://www.youtube.com/playlist?list=PLGQwSTwiUcKyFTPhELEVOjqzq9rPUJM1f)
+- 2025 notebooks: [GitHub](https://github.com/isceplus/2025-isceplus)
+
 ### CLaSH Workshop
 
 The CLaSH (Cascadia and Hikurangi) workshop brings together early-career researchers working on subduction zone science across the Pacific. Worth watching for — applications typically open in spring for a US summer workshop.

@@ -58,3 +58,4 @@ nav:
   - Tools:
     - PyGMT Maps: tools/pygmt-maps.md
   - Community: community.md
+  - About: about.md

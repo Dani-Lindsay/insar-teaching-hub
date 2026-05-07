@@ -7,12 +7,7 @@
 
 ARIA-S1-GUNW products are pre-processed Sentinel-1 interferograms produced by NASA's Jet Propulsion Laboratory and distributed freely through ASF. Unlike the HyP3 workflow where you order and wait for processing, the ARIA archive already exists — you download what you need and feed it straight into MintPy.
 
-For New Zealand, there are currently two tracks with full ARIA archives:
-
-- **Descending Track 073** — acquires in the morning (~6 AM local), lower TEC, quieter ionosphere
-- **Ascending Track 081** — acquires in the afternoon, higher TEC
-
-Roughly 1,250 interferograms per direction, ~142 MB each, ~170 GB per orbit per track. The archive currently runs from 2017–2018 through September 2025.
+The full Sentinel-1 archive for all of New Zealand has been processed into ARIA products, covering all available acquisitions from 2015 through September 2025. Some tracks and frames had irregular early acquisitions before routine Sentinel-1 operations were established, so effective coverage varies by location, but for most of New Zealand you have a near-decade time series to work with. The example below uses Kawerau (Descending Track 073, Ascending Track 081), but the same workflow applies anywhere in the country.
 
 <p align="center">
   <img src="../../assets/ARIA_NZdata.png" width="700"><br>
@@ -27,6 +22,7 @@ Roughly 1,250 interferograms per direction, ~142 MB each, ~170 GB per orbit per 
 
 - No ordering or processing wait — the archive is there, you download the bbox you need
 - Products are validated and consistent across the whole archive
+- No temporal smoothing applied, so transient and stepwise deformation (earthquakes, slow slip events, seasonal signals) are preserved in the time series
 - You can order additional pairs (outside the archive date range or custom pair lists) via ASF on-demand and they are added to the public archive once processed
 - 90 m pixel spacing — similar to the planned NISAR GSLC product (~80 m), so this is good practice for NISAR workflows
 
@@ -34,8 +30,7 @@ Roughly 1,250 interferograms per direction, ~142 MB each, ~170 GB per orbit per 
 
 - Fixed spatial resolution and filtering — you cannot change multi-looking or filter parameters
 - Pairs are pre-defined SBAS-style short temporal baselines; you cannot generate bespoke long-baseline pairs
-- Not designed for landslide studies — the 90 m pixel is too coarse to resolve small slide boundaries, and the short-baseline pairing strategy is optimised for time series, not individual event detection
-- Not compatible with Dolphin (phase linking) or PS methods — SBAS inversion only
+- Landslides are a tricky target — 90 m pixel spacing sets the minimum resolvable feature size, which rules out smaller slides but is adequate for large, slow-moving ones
 
 **Sign convention — read this:** ARIA unwrapped interferograms have the **opposite sign** from HyP3/GAMMA products. In ARIA products the more recent acquisition is the reference (not the secondary), so positive values indicate motion **toward** the sensor and negative values indicate motion **away from** the sensor. This is the reverse of what you are used to from HyP3. MintPy handles this correctly internally, but it will trip you up if you compare velocity maps from the two workflows directly without checking.
 
@@ -174,7 +169,12 @@ asc_desc2horz_vert.py \
 
 ## A notable application
 
-Govorcin et al. (2025) used the full California ARIA archive — 61,451 GUNW products across nine tracks — to produce a state-wide vertical land motion map at 90 m resolution and quantify its contribution to relative sea-level rise projections. The study shows that regional sea-level projections can underestimate local rise by more than a factor of two in areas with localised subsidence (e.g., San Francisco Bay, Los Angeles), and that temporally variable (non-linear) VLM driven by groundwater extraction substantially increases projection uncertainty. It is a good demonstration of what you can do with the full ARIA archive at scale — and the methods are directly applicable to NZ coastal subsidence and uplift questions.
+Govorcin et al. (2025) used the full California ARIA archive — 61,451 GUNW products across nine tracks — to produce a state-wide vertical land motion (VLM) map at 90 m resolution and quantify its contribution to relative sea-level rise projections. The study shows that regional sea-level projections can underestimate local rise by more than a factor of two in areas with localised subsidence (e.g., San Francisco Bay, Los Angeles), and that temporally variable VLM driven by groundwater and hydrocarbon extraction can increase 2050 projection uncertainty by up to 0.4 m in some areas. It is a compelling demonstration of what you can do with the full ARIA archive at scale, and the methods are directly applicable to NZ coastal subsidence and uplift questions.
+
+<p align="center">
+  <img src="../../assets/Govorcin2025_Fig1.png" width="750"><br>
+  <em>Figure 1 from Govorcin et al. (2025): VLM (mm/year) for 2015–2023 estimated from Sentinel-1 ARIA products combined with GNSS, relative to ITRF2014. Negative values reflect subsidence; positive values reflect uplift. Published under CC BY 4.0.</em>
+</p>
 
 > Govorcin, M., Bekaert, D. P., Hamlington, B. D., Sangha, S. S., & Sweet, W. (2025). Variable vertical land motion and its impacts on sea level rise projections. *Science Advances*, 11(5), eads8163. [https://doi.org/10.1126/sciadv.ads8163](https://doi.org/10.1126/sciadv.ads8163)
 

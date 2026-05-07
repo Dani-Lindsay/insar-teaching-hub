@@ -21,18 +21,11 @@ This hub was assembled with the help of Claude (Anthropic), drawing on my thesis
 
 ---
 
-<p align="center">
-  <img src="assets/InSAR_history.png" width="800"><br>
-  <em>A brief history of InSAR — from the first interferograms to modern time series algorithms.</em>
-</p>
-
----
-
 ## A suggested pathway
 
 1. **[Resources](resources.md)** — start with the ASF storyboards, then the background reading
 2. **[Getting Started](getting-started.md)** — what InSAR measures, how it works, and what to watch out for when interpreting data
-3. **[History of InSAR](history.md)** — the key papers and algorithm developments that shaped the field
+3. **[Key Papers](literature/keystone-papers.md)** — the papers and algorithm developments that shaped the field
 4. **[Single Interferogram](workflows/single-interferogram.md)** — order and explore your first interferogram using ASF OnDemand
 5. **[Time Series](workflows/hyp3-mintpy.md)** — build a displacement time series with HyP3 products and MintPy
 
@@ -40,7 +33,7 @@ This hub was assembled with the help of Claude (Anthropic), drawing on my thesis
 
 ## About this hub
 
-This resource is maintained by [Danielle Lindsay](https://www.gns.cri.nz/) and updated as new students come through. If something is broken or out of date, raise an issue on GitHub.
+This resource is maintained by [Danielle Lindsay](https://www.gns.cri.nz/about-us/staff-search/danielle-lindsay/) and updated as new students come through. If something is broken or out of date, raise an issue on GitHub.
 
 !!! note "Using these resources"
     Please credit the original authors of any tools, tutorials, or datasets you use. Attribution links are included throughout.

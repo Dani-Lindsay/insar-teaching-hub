@@ -4,6 +4,8 @@ site_author: Danielle Lindsay
 
 theme:
   name: material
+  icon:
+    logo: material/satellite-variant
   palette:
     - scheme: default
       primary: indigo

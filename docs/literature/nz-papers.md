@@ -13,7 +13,7 @@ InSAR and geodesy papers relevant to New Zealand — covering active faults, the
 
 <p align="center">
   <img src="../../assets/NZ_Hamling2017.png" width="800"><br>
-  <em>Interferometric fringes from the 2016 Mw 7.8 Kaikōura earthquake, field photos of surface rupture, and the InSAR phase equation. Each colour cycle in the interferogram represents ~2.8 cm of line-of-sight displacement. The earthquake ruptured at least 21 faults simultaneously, producing one of the most complex coseismic deformation fields ever mapped with InSAR. (Hamling et al., 2017)</em>
+  <em>Interferometric fringes from the 2016 Mw 7.8 Kaikōura earthquake, field photos of surface rupture, and the InSAR phase equation. (Hamling et al., 2017)</em>
 </p>
 
 ---

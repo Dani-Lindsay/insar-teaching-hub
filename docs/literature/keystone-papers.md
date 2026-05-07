@@ -9,6 +9,7 @@ From the first radar images to modern time series algorithms — key papers roug
 
 <p align="center">
   <img src="../../assets/InSAR_history.png" width="900"><br>
+  <em>Selected milestones: Landers 1992 — first earthquake captured and studied in detail with InSAR (Massonnet et al., 1993); Hector Mine 1999 Mw 7.1 — first 3D displacement mapping of an earthquake (Fialko & Simons, 2001); first slow-moving landslides detected in the Berkeley Hills (Hilley et al., 2004); first high-resolution present-day surface velocity field for the Tibetan Plateau and surrounding region (Wright et al., 2026).</em>
 </p>
 
 ---

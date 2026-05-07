@@ -1,6 +1,6 @@
-# Volcano InSAR Hub
+# InSAR Teaching Hub
 
-Training, tools, and interpretation resources for using InSAR in volcano deformation monitoring. Please reference the orginal authors of the content and tools where applicable. 
+Training, tools, and interpretation resources for using InSAR in volcano deformation monitoring. Please reference the original authors of the content and tools where applicable.
 
 ## What is this?
 
@@ -30,10 +30,10 @@ Request and interpret on-demand interferograms → See: [Single Interferogram](u
 
 Update existing time series products (LiCSAR / LiCSBAS) → See: [InSAR Time Series](use_cases/02_insar_timeseries.md) 
 
-### 💡 InSAR Montserrat and St Vincent
+### 💡 Past Experience and Lessons Learned
 
-What have we learnt already about doing InSAR in Montserrat
-→ See: [Past Experience](use_cases/04_past_experience.md) 
+What have we learnt from previous InSAR monitoring projects?
+→ See: [Past Experience](use_cases/04_past_experience.md)
 
 ---
 
@@ -44,7 +44,7 @@ Please use GitHub as the central place for questions and support.
 - Use **Discussions** for InSAR interpretation questions (e.g., “Is coherence supposed to be this low?”).
 - Use **Issues** for code or workflow problems (e.g., script errors, modelling failures).
 
-> Before posting, check existing Issues/Discussions. If this is something that requires immedidate attention email Karen Pascal (MVO) or Dani Lindsay (ESNZ).
+> Before posting, check existing Issues/Discussions. If this is something that requires immediate attention email Dani Lindsay (ESNZ).
 
 ---
 
@@ -52,9 +52,4 @@ Please use GitHub as the central place for questions and support.
 
 For support, interpretation advice, or processing help, contact:
 
-* Karen Pascal (MVO)
 * Danielle Lindsay (Earth Sciences New Zealand) d.lindsay@gns.cri.nz
-
-This resource was created by Montserrat Volcano Observatory / University of the West Indies - Seismic Research Centre and Earth Sciences New Zealand with funding from the New Zealand Ministry of Foreign Affairs and Trade
-
-# volcano-insar-hub

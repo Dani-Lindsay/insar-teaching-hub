@@ -45,17 +45,17 @@ Currently, the Sentinel-1 constellation has two satellites that orbit (satellite
 
 ---
 
-## Montserrat Example: Ordering an On-Demand Interferogram
+## Example: Ordering an On-Demand Interferogram
 
 > [!WARNING]
-> These are not exhaustive instructions — please follow the storyboards above to familiarise yourself with the process of ordering and retrieving data. Below are snapshots of the process of ordering data over Montserrat.
+> These are not exhaustive instructions — please follow the storyboards above to familiarise yourself with the process of ordering and retrieving data. Below are snapshots of the process of ordering data for a target area.
 
-1. Select the geographic region
+1. Select your geographic area of interest
 2. Select the time window of interest, last ~1–2 months
 
 <p align="center">
-  <img src="../assets/ASF_DataVertex_Montserrat.png" width="600"><br>
-  <em>Search for data on ASF Data Vertex.</em>
+  <img src="../assets/ASF_DataVertex_example.png" width="600"><br>
+  <em>Search for data on ASF Data Vertex and select your area of interest.</em>
 </p>
 
 3. Use "SBAS" tool to select the pairs you would like to order.

@@ -61,6 +61,7 @@ nav:
     - Environment Setup: workflows/environment-setup.md
     - Single Interferogram (ASF OnDemand): workflows/single-interferogram.md
     - Time Series (HyP3 + MintPy): workflows/hyp3-mintpy.md
+    - Time Series (ARIA + MintPy): workflows/aria-mintpy.md
     - Time Series (LiCSAR + LiCSBAS): workflows/licsar-licsbas.md
     - PyGMT Maps: tools/pygmt-maps.md
   - Literature:

@@ -47,18 +47,6 @@ I've been a teaching assistant across a range of courses at VUW and Berkeley:
 
 ---
 
-## Selected awards and funding
-
-- ESNZ CDF26020 "Preparing for NISAR: L-band InSAR for all!" (NZD 83,562) — 2025
-- SCEC Award #25123 "Temporal and spatial creep variability" (USD 31,500) — 2025
-- USGS Earthquake Hazards Program G24AP00049 (USD 93,000) — 2024
-- NASA FINESST: Future Investigators in NASA Earth and Space Science and Technology (USD 135,000) — 2021
-- Fulbright-EQC Graduate Award in Natural Disaster Research (USD 70,000) — 2019
-- Freemasons University Scholarship (NZD 6,000) — 2017
-- Outstanding Graduate Student Instructor, UC Berkeley — 2023
-
----
-
 ## Publications
 
 *In preparation / in press — list will be updated as papers are published.*

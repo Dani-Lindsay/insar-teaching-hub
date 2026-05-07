@@ -108,8 +108,10 @@ For **L-band data** (if you reach that stage):
 
 !!! warning "Unverified — see disclaimer above"
 
-- **Zebker, H. A. et al.** (1997). Atmospheric effects in interferometric synthetic aperture radar surface deformation and topographic maps. *Journal of Geophysical Research*, 102, 7547–7563.
-- **Gomba, G. et al.** (2016). Toward operational compensation of ionospheric effects in SAR interferograms. *IEEE Transactions on Geoscience and Remote Sensing*, 54(3). DOI: 10.1109/TGRS.2015.2481079
-- **Fattahi, H. et al.** (2017). InSAR time-series estimation of the ionospheric phase delay: An extension of the split range-spectrum technique. *IEEE Transactions on Geoscience and Remote Sensing*, 55(10). DOI: 10.1109/TGRS.2017.2719037
-- **Liang, C. et al.** (2018). Ionospheric correction of InSAR time series analysis of C-band Sentinel-1 TOPS data. *IEEE Transactions on Geoscience and Remote Sensing*, 57(9). DOI: 10.1109/TGRS.2019.2908494
-- **Wang, X. et al.** (2026). Evaluation of GIM-based TEC correction for C- and L-band InSAR time series. *IEEE Transactions on Geoscience and Remote Sensing*. DOI: 10.1109/TGRS.2026.3656511
+| Year | Authors | Paper | DOI |
+|------|---------|-------|-----|
+| 1997 | Zebker et al. | *Atmospheric effects in interferometric synthetic aperture radar surface deformation and topographic maps* | — |
+| 2016 | Gomba et al. | *Toward operational compensation of ionospheric effects in SAR interferograms* | [DOI](https://doi.org/10.1109/TGRS.2015.2481079) |
+| 2017 | Fattahi et al. | *InSAR time-series estimation of the ionospheric phase delay: An extension of the split range-spectrum technique* | [DOI](https://doi.org/10.1109/TGRS.2017.2719037) |
+| 2018 | Liang et al. | *Ionospheric correction of InSAR time series analysis of C-band Sentinel-1 TOPS data* | [DOI](https://doi.org/10.1109/TGRS.2019.2908494) |
+| 2026 | Wang et al. | *Evaluation of GIM-based TEC correction for C- and L-band InSAR time series* | [DOI](https://doi.org/10.1109/TGRS.2026.3656511) |

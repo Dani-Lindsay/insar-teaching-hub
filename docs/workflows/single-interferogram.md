@@ -117,10 +117,6 @@ Move the download script to your data directory, open a terminal there, and run 
 - **Linear gradients** → tectonic strain or atmospheric ramp
 - **Loss of coherence** → vegetation change, landslide, snow cover, or new deposits
 
-!!! tip "Reading an interferogram"
-    EarthScope (UNAVCO) have a useful one-page guide:  
-    [How to read an interferogram — Wolf Volcano, Galápagos](https://www.unavco.org/education/outreach/infographics/lib/images/InSAR-Basics-front.pdf)
-
 ### A classic example
 
 For inspiration, here is Figure 1 from Pritchard & Simons (2002) — one of the landmark InSAR papers showing volcanic deformation detected across the Central Andes.

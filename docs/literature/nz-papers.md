@@ -11,6 +11,13 @@ InSAR and geodesy papers relevant to New Zealand — covering active faults, the
 
 ---
 
+<p align="center">
+  <img src="../../assets/kaikoura_hamling2017.jpg" width="800"><br>
+  <em>Interferometric fringes from the 2016 Mw 7.8 Kaikōura earthquake, field photos of surface rupture, and the InSAR phase equation. Each colour cycle in the interferogram represents ~2.8 cm of line-of-sight displacement. The earthquake ruptured at least 21 faults simultaneously, producing one of the most complex coseismic deformation fields ever mapped with InSAR. (Hamling et al., 2017)</em>
+</p>
+
+---
+
 | Year | Authors | Paper | DOI | Takeaway |
 |------|---------|-------|-----|----------|
 | 2016 | Langridge et al. | *The New Zealand Active Faults Database* | [DOI](https://doi.org/10.1080/00288306.2015.1112818) | The reference catalogue for active fault geometry in NZ — the starting point for any InSAR study targeting fault creep or coseismic deformation. |
@@ -22,7 +29,7 @@ InSAR and geodesy papers relevant to New Zealand — covering active faults, the
 | 2023 | Cao et al. | *Slow-moving landslides triggered by the 2016 Mw 7.8 Kaikōura earthquake, New Zealand: a new InSAR phase-gradient based time-series approach* | [DOI](https://doi.org/10.1029/2022GL102064) | Phase-gradient time series for detecting co- and post-seismic landslide accelerations across the Kaikōura rupture zone — methodologically useful for triggered-slip studies. |
 | 2025 | Kearse et al. | *InSAR measurement of vertical land motion in New Zealand cities, and implications for sea-level rise projections* | [DOI](https://doi.org/10.1080/00288306.2024.2354076) | Sentinel-1 vertical land motion in NZ urban centres — shows both subsidence and uplift signals, directly relevant to sea-level hazard assessment. |
 | 2025 | McGrath et al. | *Linking geodetically resolved uplift to long-term orogenic exhumation in the Southern Alps, New Zealand* | [DOI](https://doi.org/10.1029/2024JB030625) | Connects InSAR-measured rock uplift across the Southern Alps to million-year exhumation rates — a good example of InSAR bridging geodetic and geological timescales. |
-| in press | Lindsay et al. | *Nine-year L-band InSAR time series of tectonic and non-tectonic surface deformation in northern California* | [DOI](https://doi.org/10.1029/2025JB032718) | ALOS-2 ScanSAR methodology — ionospheric correction, split-spectrum, multi-track velocity fields. Northern California data, but the methods are directly applicable to NZ L-band work. |
+| accepted | Lindsay et al. | *Nine-year L-band InSAR time series of tectonic and non-tectonic surface deformation in northern California* | [DOI](https://doi.org/10.1029/2025JB032718) | ALOS-2 ScanSAR methodology — ionospheric correction, split-spectrum, multi-track velocity fields. Northern California data, but the methods are directly applicable to NZ L-band work. |
 
 ---
 

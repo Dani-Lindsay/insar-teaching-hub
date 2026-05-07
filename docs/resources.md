@@ -9,6 +9,11 @@
 
 Currently operating satellites use wavelengths of around 3 cm (X-band), 6 cm (C-band, e.g. Sentinel-1), and 23 cm (L-band, e.g. ALOS-2, NISAR). Longer wavelengths maintain coherence better over vegetated terrain — important in New Zealand.
 
+<p align="center">
+  <img src="../assets/insar_equation_cartoon.png" width="700"><br>
+  <em>The measured interferometric phase is the sum of contributions from ground deformation, the troposphere, the ionosphere, satellite geometry, and noise. Separating the deformation signal from the rest is the central challenge of InSAR data analysis.</em>
+</p>
+
 ---
 
 ## Start here — ASF Storyboards
@@ -34,9 +39,6 @@ Short, accessible reads before you get into the processing.
 
 - **NASA Earthdata SAR overview** — broader context on what SAR data is used for  
   [https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar)
-
-- **EarthScope — How to read an interferogram** (one-page PDF, Wolf Volcano example)  
-  [https://www.unavco.org/education/outreach/infographics/lib/images/InSAR-Basics-front.pdf](https://www.unavco.org/education/outreach/infographics/lib/images/InSAR-Basics-front.pdf)
 
 - **USGS Fact Sheet — Monitoring Ground Deformation from Space**  
   [https://pubs.usgs.gov/fs/2005/3025/2005-3025.pdf](https://pubs.usgs.gov/fs/2005/3025/2005-3025.pdf)

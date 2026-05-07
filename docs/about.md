@@ -56,9 +56,8 @@ I've been a teaching assistant across a range of courses at VUW and Berkeley:
 
 ## Publications
 
-*In preparation / in press — list will be updated as papers are published.*
-
+- **Lindsay, D.**, Bürgmann, R., & Taira, T. (*accepted*). Nine-year L-band InSAR time series of tectonic and non-tectonic surface deformation in northern California. *Journal of Geophysical Research: Solid Earth*. [https://doi.org/10.1029/2025JB032718](https://doi.org/10.1029/2025JB032718)
 - **Lindsay, D.**, & Bürgmann, R. (*in prep*). 3D Velocity Field From L-Band InSAR Reveals Multi-Scale Tectonic and Non-tectonic Deformation in Northern California.
-- **Lindsay, D.**, Taira, T., & Bürgmann, R. (*in prep*). Temporal and Spatial Creep Variability: Detecting Decadal Changes in Fault Behavior in Northern California.
+- **Lindsay, D.**, Taira, T., & Bürgmann, R. (*submitted*). Temporal and Spatial Creep Variability: Detecting Decadal Changes in Fault Behavior in Northern California.
 - **Lindsay, D.**, Taira, T., & Bürgmann, R. (*in prep*). Slow-Moving Landslide Response to Earthquake Shaking and Atmospheric Rivers in Northern California From 2021–2024 InSAR Time Series.
 - Materna, K., Bürgmann, R., **Lindsay, D.**, et al. (2024). Shallow slow slip events in the Imperial Valley with along-strike propagation. *Geophysical Research Letters*, 51(12), e2023GL108089.

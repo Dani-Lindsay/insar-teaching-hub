@@ -1,5 +1,12 @@
 # Time Series with HyP3 + MintPy
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 This workflow builds a displacement time series using **HyP3 multi-burst interferograms** processed on demand through ASF, and **MintPy** for the SBAS time series analysis.
 
 This is the recommended workflow for students starting out — you do not need to install SAR processing software, and the entire pipeline runs in a Jupyter notebook.

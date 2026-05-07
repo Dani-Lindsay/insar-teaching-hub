@@ -1,5 +1,12 @@
 # Conferences and Scholarships
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 > **Scholarships are like sunscreen — apply liberally.**
 
 Apply for everything you are eligible for, early and often. The worst outcome is a rejection; the best is funding for fieldwork, a conference trip, or a research visit that changes the direction of your masters.

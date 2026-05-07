@@ -1,5 +1,12 @@
 # About
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 ## Hi, I'm Dani
 
 I'm an InSAR Scientist at GNS Science (Earth Sciences New Zealand, ESNZ), based in Wellington. My background is in geology and geophysics — I studied at Victoria University of Wellington before completing a PhD at UC Berkeley, and I've spent most of my career trying to make satellites tell us something useful about how the ground moves.

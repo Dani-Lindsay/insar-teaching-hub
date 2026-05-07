@@ -1,5 +1,12 @@
 # Making Maps with PyGMT
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 [PyGMT](https://www.pygmt.org/) is a Python interface to the Generic Mapping Tools (GMT) — the standard tool for publication-quality geoscience maps. It works well in Jupyter notebooks, which makes it straightforward to combine with InSAR data analysis.
 
 ---

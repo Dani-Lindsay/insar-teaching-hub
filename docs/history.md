@@ -1,5 +1,12 @@
 # A History of InSAR
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 From the first radar images of glaciers to modern large-scale time series algorithms — InSAR has evolved rapidly over 40 years, driven by a handful of pivotal papers and the growing availability of free satellite data.
 
 <p align="center">

@@ -1,5 +1,12 @@
 # Ordering Your First Interferogram (ASF OnDemand)
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 This workflow walks you through ordering a single Sentinel-1 interferogram using the Alaska Satellite Facility's ([ASF](https://asf.alaska.edu/)) on-demand processing service, exploring the products, and doing a first-pass interpretation.
 
 **Background**

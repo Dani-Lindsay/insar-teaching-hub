@@ -1,5 +1,12 @@
 # Getting Started with InSAR
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 **What is InSAR, how does it work, and what are the key things to understand before you start interpreting data.**
 
 For links to tutorials, courses, and tools — see [Resources](resources.md).

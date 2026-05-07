@@ -1,5 +1,12 @@
 # New Zealand InSAR Papers
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 InSAR studies focused on New Zealand — covering the Alpine Fault, North Island volcanic arc, Hikurangi subduction zone, and slow-moving landslides. This list is not exhaustive but covers the papers most relevant to ongoing work in NZ tectonic and hazard contexts.
 
 <p align="center">

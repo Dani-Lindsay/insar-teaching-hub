@@ -1,5 +1,12 @@
 # Resources
 
+
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on.
+
+---
+
+
 !!! note "What this hub is"
     This is a curated collection of things I've found useful for getting started with InSAR — not a complete learning environment. The goal is to save you time finding good resources and to give you a structured path through them. The best learning materials already exist; I'm just pointing you to them.
 

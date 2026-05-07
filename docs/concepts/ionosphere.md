@@ -1,7 +1,7 @@
 # Ionospheric Effects in InSAR
 
-!!! danger "Literature disclaimer"
-    The reference list and some technical summaries on this page were drafted with the assistance of Claude (Anthropic). Citations and DOIs have **not yet been independently verified** against the primary literature. Do not cite these references in your own work without checking them yourself. This flag will be removed once the page has been reviewed.
+!!! warning "Under review"
+    This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on. References and DOIs on this page have not been independently verified.
 
 ---
 

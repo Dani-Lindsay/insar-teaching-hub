@@ -50,6 +50,8 @@ nav:
     - Single Interferogram (ASF OnDemand): workflows/single-interferogram.md
     - Time Series (HyP3 + MintPy): workflows/hyp3-mintpy.md
     - Time Series (LiCSAR + LiCSBAS): workflows/licsar-licsbas.md
+  - Concepts:
+    - Ionospheric Effects: concepts/ionosphere.md
   - Literature:
     - Keystone Papers: literature/keystone-papers.md
     - NZ InSAR Papers: literature/nz-papers.md

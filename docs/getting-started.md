@@ -28,20 +28,27 @@ The technique uses two or more **Synthetic Aperture Radar (SAR)** images collect
 - **Deformation detection:** If the ground surface moves between acquisitions, the satellite-to-ground distance changes, producing a phase shift. This appears as colourful **fringes** in the interferogram, where one full colour cycle (−π to +π radians) represents motion of **half a radar wavelength** along the satellite line-of-sight.
 - **Horizontal and vertical motion:** InSAR measures change in distance between the satellite and the ground (line-of-sight), not vertical motion directly. Once the same scene is observed by ascending (south-to-north) and descending (north-to-south) passes, you can solve for both horizontal and vertical components.
 
+Modern satellites like Sentinel-1 and ALOS-2 use a **ScanSAR** acquisition mode, sweeping the radar beam across multiple sub-swaths to cover wide areas (~250–350 km). Each sub-swath is illuminated in short bursts — understanding this geometry is important when selecting data and choosing between single-burst and multi-burst processing.
+
+<p align="center">
+  <img src="../assets/ScanSAR_geometry_simons2015.png" width="600"><br>
+  <em>ScanSAR acquisition geometry showing the burst-and-subswath structure. The radar transmits a burst of pulses to subswath 1 then switches electronically to subswaths 2 and 3. Burst overlap between subswaths allows construction of continuous maps. From Simons & Rosen (2015).</em>
+</p>
+
 ---
 
-## The 5 biggest "gotchas"
+## Common sources of misinterpretation
 
-Use this as a checklist before interpreting any pattern.
+Before interpreting any pattern, consider each of the following.
 
-1. **Atmosphere** can mimic deformation — patchy signals correlated with topography or weather (Zebker et al., 1997).
-2. **Unwrapping errors** can create false bullseyes or discontinuities.
-3. **Topography + geometry** cause layover and shadow — missing data and odd edges in steep terrain.
-4. **One interferogram ≠ 3D motion** — you often need ascending + descending tracks, GNSS, or modelling (Wright et al., 2004).
-5. **Low coherence does not mean no deformation** — it means the phase signal is unreliable and cannot be interpreted.
+1. **Atmospheric delay** — tropospheric and ionospheric signals can produce fringe patterns that closely resemble real deformation. Tropospheric signals tend to be correlated with topography; ionospheric signals produce long-wavelength, range-parallel ramps, particularly in L-band data (Zebker et al., 1997).
+2. **Phase unwrapping errors** — discontinuities or false bulleyes introduced during the unwrapping step. These are especially common in low-coherence areas and near phase gradients that exceed half a fringe per pixel.
+3. **Geometric effects** — layover and radar shadow in steep terrain produce missing data and apparent discontinuities that have no geophysical meaning.
+4. **Line-of-sight ambiguity** — a single interferogram measures displacement only in the radar line-of-sight direction, which mixes vertical and horizontal motion. Separating the two requires ascending and descending tracks, GNSS constraints, or modelling (Wright et al., 2004).
+5. **Coherence loss** — low coherence does not indicate deformation; it indicates that the phase signal is unreliable and cannot be interpreted. Coherence loss over a landslide may itself be a signal worth investigating, but it must not be confused with a phase measurement.
 
 !!! warning
-    Many convincing circular fringe patterns in student work turn out to be atmospheric or unwrapping artefacts, not real deformation. Always check multiple dates and both orbit directions before drawing conclusions.
+    Circular fringe patterns are not sufficient evidence of deformation. Atmospheric artefacts, unwrapping errors, and topographic effects can produce visually similar patterns. Always examine multiple interferograms spanning the same period and compare ascending and descending geometries before drawing conclusions.
 
 ---
 

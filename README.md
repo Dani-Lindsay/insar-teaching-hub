@@ -1,55 +1,36 @@
 # InSAR Teaching Hub
 
-Training, tools, and interpretation resources for using InSAR in volcano deformation monitoring. Please reference the original authors of the content and tools where applicable.
+A curated learning resource for masters students getting started with InSAR — covering fundamentals, hands-on workflows, and the literature that shaped the field.
 
-## What is this?
-
-This repository is a simple hub to support volcano monitoring using satellite radar (InSAR).
-
-It provides:
-* Introductory learning resources
-* Step-by-step monitoring workflows
-* Scripts for time series and modelling
-* Guidance on interpreting deformation signals
+**Target audience:** Masters-level students with a geology or earth science background and no prior InSAR experience.
 
 ---
 
-### 🛰️ What is InSAR?
+## Contents
 
-What is an interferogram and more → See: [InSAR Basics](use_cases/00_InSAR_basics.md)
-
-### 🧠 Check whether the signal you see in the GNSS can be seen with InSAR
-
-Run simple deformation modelling tools → See: [GNSS Forward Model](use_cases/03_forward_modelling.md) 
-
-### 🔎 So think something is happening now, lets make an interferogram! 
-
-Request and interpret on-demand interferograms → See: [Single Interferogram](use_cases/01_single_interferogram.md) 
-
-### 📈 Do you want to update long-term deformation?
-
-Update existing time series products (LiCSAR / LiCSBAS) → See: [InSAR Time Series](use_cases/02_insar_timeseries.md) 
-
-### 💡 Past Experience and Lessons Learned
-
-What have we learnt from previous InSAR monitoring projects?
-→ See: [Past Experience](use_cases/04_past_experience.md)
+- **History of InSAR** — key papers and algorithm development timeline
+- **Getting Started** — what InSAR measures, key concepts, and a structured learning pathway
+- **Workflows**
+  - Ordering a single interferogram with ASF OnDemand (HyP3)
+  - Time series analysis with HyP3 multi-burst + MintPy
+  - Time series analysis with LiCSAR + LiCSBAS
+- **Literature** — keystone papers and NZ-focused InSAR studies
+- **Tools** — PyGMT mapping notebooks
+- **Community** — conferences and scholarships
 
 ---
 
-## Trouble shooting and support
+## Viewing the hub
 
-Please use GitHub as the central place for questions and support.
+The rendered site is available at: `https://[username].github.io/insar-teaching-hub/`
 
-- Use **Discussions** for InSAR interpretation questions (e.g., “Is coherence supposed to be this low?”).
-- Use **Issues** for code or workflow problems (e.g., script errors, modelling failures).
+To build locally:
 
-> Before posting, check existing Issues/Discussions. If this is something that requires immediate attention email Dani Lindsay (ESNZ).
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
 
 ---
 
-## Contacts
-
-For support, interpretation advice, or processing help, contact:
-
-* Danielle Lindsay (Earth Sciences New Zealand) d.lindsay@gns.cri.nz
+Maintained by [Danielle Lindsay](https://www.gns.cri.nz/). Raise issues or suggestions via GitHub Issues.

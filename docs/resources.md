@@ -10,7 +10,7 @@
 Currently operating satellites use wavelengths of around 3 cm (X-band), 6 cm (C-band, e.g. Sentinel-1), and 23 cm (L-band, e.g. ALOS-2, NISAR). Longer wavelengths maintain coherence better over vegetated terrain — important in New Zealand.
 
 <p align="center">
-  <img src="../assets/insar_equation_cartoon.png" width="700"><br>
+  <img src="../assets/InSAR_cartoon.png" width="700"><br>
   <em>The measured interferometric phase is the sum of contributions from ground deformation, the troposphere, the ionosphere, satellite geometry, and noise. Separating the deformation signal from the rest is the central challenge of InSAR data analysis.</em>
 </p>
 

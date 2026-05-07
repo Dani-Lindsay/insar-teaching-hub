@@ -29,11 +29,15 @@ If you miss the application window, past year materials are publicly available:
 - 2025 recordings: [YouTube playlist](https://www.youtube.com/playlist?list=PLGQwSTwiUcKyFTPhELEVOjqzq9rPUJM1f)
 - 2025 notebooks: [GitHub](https://github.com/isceplus/2025-isceplus)
 
-### CLaSH Workshop
+### CLaSH Graduate Summer Field School
 
-The CLaSH (Cascadia and Hikurangi) workshop brings together early-career researchers working on subduction zone science across the Pacific. Worth watching for — applications typically open in spring for a US summer workshop.
+An NSF-supported, hands-on field school in natural hazards (landslides, post-fire debris flows, earthquake and storm triggers) run by the Center for Land Surface Hazards.
 
-- **Stay informed:** Sign up for the CLaSH mailing list at [https://clash.vuw.ac.nz/](https://clash.vuw.ac.nz/)
+- **Dates:** July 27 – August 1, 2026, Colorado State University Mountain Campus
+- **Cost:** $850 inclusive of room/board, materials, and transport from Denver or Fort Collins. Fee waivers and airfare assistance available — apply and ask.
+- **Eligibility:** Any MS or PhD student in a relevant geoscience or engineering field
+- **Deadline:** ~April 30 each year
+- **Contact:** contact@geoclash.org
 
 ### SZ4D and Cascadia Early-Career Activities
 

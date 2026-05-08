@@ -62,6 +62,7 @@ nav:
     - Single Interferogram (ASF OnDemand): workflows/single-interferogram.md
     - Time Series (HyP3 + MintPy): workflows/hyp3-mintpy.md
     - Time Series (ARIA + MintPy): workflows/aria-mintpy.md
+    - 'Notebook: Cecil Peak': code/timeseries/aria_mintpy_cecilpeak.ipynb
     - Time Series (LiCSAR + LiCSBAS): workflows/licsar-licsbas.md
     - PyGMT Maps: tools/pygmt-maps.md
   - Literature:

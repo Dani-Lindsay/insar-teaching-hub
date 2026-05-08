@@ -1,0 +1,1517 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learning resources for InSAR — from fundamentals to time series analysis.">
+      
+      
+        <meta name="author" content="Danielle Lindsay">
+      
+      
+      
+        <link rel="prev" href="../../literature/nz-papers/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Ionospheric Effects - InSAR Teaching Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ionospheric-effects-in-insar" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="InSAR Teaching Hub" class="md-header__button md-logo" aria-label="InSAR Teaching Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.62 1 5.66 5.67-2.12 2.12-2.12-2.12-1.42 1.42 2.33 2.32-1.16 1.17.45.46a2.5 2.5 0 0 1 2.83.5l-3.53 3.53a2.5 2.5 0 0 1-.5-2.83l-.46-.45-1.17 1.16-2.32-2.33-1.42 1.42 2.12 2.12-2.12 2.12L1 11.62 3.14 9.5l2.12 2.12 1.41-1.41-2.83-2.83c-.78-.78-.78-2.05 0-2.83l.71-.71c.78-.78 2.05-.78 2.83 0l2.83 2.83 1.41-1.41L9.5 3.14zM18 14a4 4 0 0 1-4 4v-2a2 2 0 0 0 2-2zm4 0a8 8 0 0 1-8 8v-2a6 6 0 0 0 6-6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InSAR Teaching Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ionospheric Effects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../workflows/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workflows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../literature/keystone-papers/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Literature
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="InSAR Teaching Hub" class="md-nav__button md-logo" aria-label="InSAR Teaching Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.62 1 5.66 5.67-2.12 2.12-2.12-2.12-1.42 1.42 2.33 2.32-1.16 1.17.45.46a2.5 2.5 0 0 1 2.83.5l-3.53 3.53a2.5 2.5 0 0 1-.5-2.83l-.46-.45-1.17 1.16-2.32-2.33-1.42 1.42 2.12 2.12-2.12 2.12L1 11.62 3.14 9.5l2.12 2.12 1.41-1.41-2.83-2.83c-.78-.78-.78-2.05 0-2.83l.71-.71c.78-.78 2.05-.78 2.83 0l2.83 2.83 1.41-1.41L9.5 3.14zM18 14a4 4 0 0 1-4 4v-2a2 2 0 0 0 2-2zm4 0a8 8 0 0 1-8 8v-2a6 6 0 0 0 6-6z"/></svg>
+
+    </a>
+    InSAR Teaching Hub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    InSAR Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conferences and Scholarships
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../workflows/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflows
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/environment-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/single-interferogram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Single Interferogram (ASF OnDemand)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/hyp3-mintpy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Series (HyP3 + MintPy)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/aria-mintpy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Series (ARIA + MintPy)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/aria_mintpy_cecilpeak/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ARIA → MintPy Time Series: Cecil Peak, Queenstown NZ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/licsar-licsbas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Series (LiCSAR + LiCSBAS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/pygmt-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyGMT Maps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Literature
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Literature
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../literature/keystone-papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Papers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../literature/nz-papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NZ InSAR Papers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ionospheric Effects
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ionospheric Effects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-ionosphere-and-why-does-it-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the ionosphere and why does it matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-radar-frequency-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why does radar frequency matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-ionospheric-noise-look-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What does ionospheric noise look like?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-zealand-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New Zealand context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correction-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Correction methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ramp-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ramp removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-ionosphere-maps-gims" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Ionosphere Maps (GIMs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-spectrum-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split-spectrum method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nisar-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NISAR-specific
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-guidance-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical guidance for students
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-ionosphere-and-why-does-it-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the ionosphere and why does it matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-radar-frequency-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why does radar frequency matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-ionospheric-noise-look-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What does ionospheric noise look like?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-zealand-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New Zealand context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correction-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Correction methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ramp-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ramp removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-ionosphere-maps-gims" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Ionosphere Maps (GIMs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-spectrum-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split-spectrum method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nisar-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NISAR-specific
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-guidance-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical guidance for students
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ionospheric-effects-in-insar">Ionospheric Effects in InSAR</h1>
+<div class="admonition warning">
+<p class="admonition-title">Disclaimer</p>
+<p>This page was assembled by Claude (Anthropic) drawing on Dani Lindsay's thesis work, research notes, and guidance. It has not yet been through a final review — if you see this notice, treat the content as a useful starting point but verify anything you plan to cite or act on. References and DOIs on this page have not been independently verified.</p>
+</div>
+<hr />
+<h2 id="what-is-the-ionosphere-and-why-does-it-matter">What is the ionosphere and why does it matter?</h2>
+<p>The ionosphere is the upper layer of Earth's atmosphere, roughly 70–1,000 km above the surface. Solar radiation ionises the gas there, creating a layer of free electrons. When a radar signal passes through this layer on the way down to the ground and back up again, those electrons slow and bend the signal in a way that introduces a measurable error.</p>
+<p>This matters because InSAR works by comparing the phase of radar echoes collected on two different passes. The technique can resolve ground movements of just a few millimetres. Any change in the ionosphere between those two passes will appear as apparent ground movement that is not real.</p>
+<p>The magnitude of the effect depends on the <strong>Total Electron Content (TEC)</strong> — essentially how many electrons the signal passed through. TEC varies with:</p>
+<ul>
+<li>Time of day (highest in the afternoon, lowest before dawn)</li>
+<li>Season (higher in summer)</li>
+<li>Latitude (strongest near the equator and at high latitudes)</li>
+<li>Solar activity (follows an ~11-year solar cycle — 2025/2026 is near solar maximum)</li>
+</ul>
+<hr />
+<h2 id="why-does-radar-frequency-matter">Why does radar frequency matter?</h2>
+<p>Ionospheric delay scales as the <strong>inverse square of radar frequency</strong> — lower frequency means much larger error.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Wavelength</th>
+<th>Example missions</th>
+<th>Ionosphere sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X-band</td>
+<td>~3 cm</td>
+<td>TerraSAR-X, COSMO-SkyMed</td>
+<td>Very low</td>
+</tr>
+<tr>
+<td>C-band</td>
+<td>~6 cm</td>
+<td>Sentinel-1, ERS, ENVISAT</td>
+<td>Low to moderate</td>
+</tr>
+<tr>
+<td>L-band</td>
+<td>~24 cm</td>
+<td>ALOS-1/2, NISAR, ALOS-4</td>
+<td><strong>High — ~16× more than C-band</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For <strong>Sentinel-1 C-band</strong> data, which you will use for most work at the start of your masters, the ionosphere is usually negligible for localised signals (landslides, volcanic centres). It can matter at the millimetre-per-year level for long-wavelength tectonic signals, particularly on ascending tracks.</p>
+<p>For <strong>L-band data</strong> (ALOS-2, NISAR), the ionosphere is often the dominant noise source and must be accounted for in any rigorous scientific result.</p>
+<hr />
+<h2 id="what-does-ionospheric-noise-look-like">What does ionospheric noise look like?</h2>
+<p>Ionospheric signals in interferograms typically appear as:</p>
+<ul>
+<li>Long-wavelength, range-parallel phase ramps across the scene</li>
+<li>Smooth gradients that do not correlate with topography (unlike tropospheric delay)</li>
+<li>Asymmetries between ascending and descending tracks (because ascending passes occur in the afternoon when the ionosphere is more active)</li>
+<li>At L-band: signals that can reach tens of centimetres to metres of apparent displacement across a wide-swath scene</li>
+</ul>
+<p align="center">
+  <img src="../../assets/ionosphere_examples_alos2.jpg" width="700"><br>
+  <em>Examples of ionospheric signals in ALOS-2 ScanSAR interferograms over Northern California (Lindsay, PhD thesis, UC Berkeley 2025). The long-wavelength streaks running roughly parallel to the range direction are characteristic of ionospheric noise at L-band. These signals are not ground deformation.</em>
+</p>
+
+<hr />
+<h2 id="new-zealand-context">New Zealand context</h2>
+<p>New Zealand sits at mid-southern latitudes (~35–47°S), which is generally a favourable ionospheric environment — away from the equatorial ionisation anomaly and the polar electrojet.</p>
+<ul>
+<li><strong>Descending tracks</strong> acquire in the morning (local time ~6 AM): low TEC, quieter ionosphere</li>
+<li><strong>Ascending tracks</strong> acquire in the afternoon: higher TEC, more variable</li>
+<li><strong>For Sentinel-1 C-band over NZ</strong>: ionospheric corrections are unlikely to be needed for localised signals at centimetre rates. For interseismic studies at millimetre-per-year rates, corrections are worth considering.</li>
+<li><strong>Limitation</strong>: the South Pacific has sparse GNSS ground stations, which reduces the accuracy of model-based TEC corrections over NZ compared to continental regions.</li>
+</ul>
+<hr />
+<h2 id="correction-methods">Correction methods</h2>
+<h3 id="ramp-removal">Ramp removal</h3>
+<p>Fit and subtract a tilted plane from the interferogram. Works because the ionospheric signal is smooth and long-wavelength. The problem: it also removes any real long-wavelength deformation signal. Use only when you can verify the removed signal is not geophysical.</p>
+<h3 id="global-ionosphere-maps-gims">Global Ionosphere Maps (GIMs)</h3>
+<p>The International GNSS Service (IGS) has produced Global Ionosphere Maps (TEC grids derived from GNSS stations) since 1998. Tools like <strong>RAiDER</strong> and <strong>MintPy's <code>iono_tec.py</code></strong> can apply these as corrections.</p>
+<p>GIM corrections work adequately for C-band at mid-latitudes. They do not work for L-band — the spatial resolution (~300–400 km) is too coarse to capture the mesoscale ionospheric gradients that dominate at L-band sensitivity. Applying a GIM correction to L-band data has been shown to increase errors rather than reduce them (Wang et al., 2026).</p>
+<h3 id="split-spectrum-method">Split-spectrum method</h3>
+<p>The most effective approach for L-band data. The ionospheric signal is <strong>dispersive</strong> (frequency-dependent) while ground deformation is not. By processing the radar data at two slightly different frequencies (sub-bands), the ionospheric contribution can be isolated and removed.</p>
+<p>This requires full-bandwidth SLC data and is computationally expensive, but it captures the actual ionospheric structure at the full spatial resolution of the radar. The method was developed by Gomba et al. (2016), extended to InSAR time series by Fattahi et al. (2017), and applied to wide-swath ALOS-2 data by Liang et al. (2018).</p>
+<p><strong>Per-date inversion</strong>: rather than correcting each interferogram independently, the whole network can be inverted to estimate the ionospheric phase for each individual acquisition date. This reduces noise because multiple interferograms constrain each estimate.</p>
+<h3 id="nisar-specific">NISAR-specific</h3>
+<p>NISAR transmits in a split-spectrum mode by design, and its GUNW products include a pre-computed ionospheric phase screen layer at 80 m resolution. For NISAR data, this is the primary correction approach.</p>
+<hr />
+<h2 id="practical-guidance-for-students">Practical guidance for students</h2>
+<p>For most work with <strong>Sentinel-1 C-band</strong> over New Zealand:</p>
+<ul>
+<li>Start without ionospheric correction and assess your results</li>
+<li>Indicators that correction may be needed: long-wavelength ramp-like signals, asymmetry between ascending and descending results, phase streaks aligned with the range direction</li>
+<li>If correction is needed, the GIM-based approach via MintPy's <code>iono_tec.py</code> is the practical starting point</li>
+</ul>
+<p>For <strong>L-band data</strong> (if you reach that stage):</p>
+<ul>
+<li>Split-spectrum correction is required for scientific-quality results</li>
+<li>Seek guidance before attempting this — it involves significant additional processing steps</li>
+</ul>
+<hr />
+<h2 id="key-references">Key references</h2>
+<div class="admonition warning">
+<p class="admonition-title">Unverified — see disclaimer above</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Authors</th>
+<th>Paper</th>
+<th>DOI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1997</td>
+<td>Zebker et al.</td>
+<td><em>Atmospheric effects in interferometric synthetic aperture radar surface deformation and topographic maps</em></td>
+<td>—</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>Gomba et al.</td>
+<td><em>Toward operational compensation of ionospheric effects in SAR interferograms</em></td>
+<td><a href="https://doi.org/10.1109/TGRS.2015.2481079">DOI</a></td>
+</tr>
+<tr>
+<td>2017</td>
+<td>Fattahi et al.</td>
+<td><em>InSAR time-series estimation of the ionospheric phase delay: An extension of the split range-spectrum technique</em></td>
+<td><a href="https://doi.org/10.1109/TGRS.2017.2719037">DOI</a></td>
+</tr>
+<tr>
+<td>2018</td>
+<td>Liang et al.</td>
+<td><em>Ionospheric correction of InSAR time series analysis of C-band Sentinel-1 TOPS data</em></td>
+<td><a href="https://doi.org/10.1109/TGRS.2019.2908494">DOI</a></td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Wang et al.</td>
+<td><em>Evaluation of GIM-based TEC correction for C- and L-band InSAR time series</em></td>
+<td><a href="https://doi.org/10.1109/TGRS.2026.3656511">DOI</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
